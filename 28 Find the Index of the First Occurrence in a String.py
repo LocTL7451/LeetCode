@@ -23,6 +23,6 @@ class Solution:
 sol = Solution()
 print(sol.strStr("sadcosimbad", "imb"))
                 
-            
+ 
         
     
