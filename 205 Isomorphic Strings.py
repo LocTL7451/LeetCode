@@ -8,6 +8,12 @@ Memory | 17.1 MB
 Beats | 5.42%
 """
 
+""" 
+    Cheeky way to map elements to their positions, telling us where the first instance of each character exists. If the character exists earlier
+    in one array but later in another, this suggests that the characters are mapped to different key value pairs across both arrays. 
+    We then check this pattern to see if the locations are the same, meaning they are mapped in the same spots. 
+"""
+
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
         mappedSPositions = []
