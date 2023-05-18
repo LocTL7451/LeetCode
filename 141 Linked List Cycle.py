@@ -2,10 +2,10 @@
 # https://leetcode.com/problems/linked-list-cycle/?envType=study-plan-v2&id=top-interview-150
 
 """
-Runtime | 108 ms
-Beats | 59.35%
-Memory | 20.4 MB
-Beats | 20.31%
+Runtime | 80 ms
+Beats | 12.23%
+Memory | 20.3 MB
+Beats | 26.27%
 """
 
 """
