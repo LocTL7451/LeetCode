@@ -8,12 +8,13 @@ Beats | 36.7%
 """
 
 """ 
-    The approach here is to keep track of the index position of every number in the array as we traverse it
-    We know that: 
-        Target = Rem + N
-        For every number Rem, we know that Rem = Target - N
-    Using this information, we can calculate the remainder for every N in our nums array 
-    For each N, we calculate Rem and check the hash map to see if we have found the position for that number or not 
+    The approach for this problem is exactly the same as the solution for problem 1. The following is an exerpt of my comments from that problem:
+        The approach here is to keep track of the index position of every number in the array as we traverse it
+        We know that: 
+            Target = Rem + N
+            For every number Rem, we know that Rem = Target - N
+        Using this information, we can calculate the remainder for every N in our nums array 
+        For each N, we calculate Rem and check the hash map to see if we have found the position for that number or not 
 """
 
 class Solution:
