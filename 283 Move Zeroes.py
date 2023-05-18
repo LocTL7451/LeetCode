@@ -8,11 +8,10 @@ Beats | 14.20%
 """
 
 """
-    The approach here is to make use of an attribute of sorting arrays of strings, which is
-    that the greatest difference between strings will be between the first 
-    and the last elements of the array.
-    To make use of this, we sort the array then compare the first and last elements
-    For every matching char, we add the matching char to a return string.
+    My approach here is to iterate through the nums array and count the number of zeroes
+    As we count the zero, we pop the zero from the array.
+    Upon completed execution of the iteration, we append zeroes to the end of the array according to the number
+    of counted zeroes. 
 """
 class Solution:
     def moveZeroes(self, nums) -> None:
