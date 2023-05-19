@@ -9,10 +9,9 @@ Beats | 8.90%
 """
 
 """
-    My approach to solving this problem was to use a mathematical GCD value. 
-    We first need to verify that a GCD can exist, which is done by checking if s1+s2 is the same as s2+s1. 
-    We then find the mathematical GCD between the length of both of the words, and then return the string as
-    a splice from the start to the GCD index - 1. 
+    My approach is to sweep the array and check what the max val is initially.
+    We then loop through the array and add extraCandies to each position, if the position is greater
+    than the max val, then we swap the position to True otherwise False.
 """
 class Solution:
     def kidsWithCandies(self, candies, extraCandies: int):
