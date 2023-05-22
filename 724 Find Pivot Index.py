@@ -9,7 +9,11 @@ Beats | 8.85%
 """
 
 """ 
-    
+    The approach here is to use a prefix sum, in which we initialise the value at each i position to the cumulative sum of all elements from 
+    nums[:i+1] (i's current value included).
+    We then loop through the prefix sum array and check if for each current position, the cumulative sum of all elements up until not including the 
+    current position is equal to the difference of the final sum (len(nums) position) and current i sum, which gives us the cumulative sum of all 
+    i position values in nums[i+1:len(nums)]
 """
 
 class Solution:
