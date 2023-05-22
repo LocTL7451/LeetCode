@@ -9,7 +9,12 @@ Beats | 16.69%
 """
 
 """ 
-
+    The approach here is similar to problem 1456, in which we keep track of the number of 0's in the current window subarray by 
+    incrementing and decrementing k. K gives us indications of how many 0's exist, where the case of k < 0 suggests there are too many
+    0's in the current window.
+    
+    We then initialise a left and right window pointer, where the right pointer always moves to the right every iteration, and the left 
+    only moves when the current window subarray contains too many 0's.
 """
 
 class Solution:
