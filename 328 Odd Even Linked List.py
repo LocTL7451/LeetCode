@@ -27,44 +27,22 @@ class Solution:
         print(retArr)
 
     def oddEvenList(self, head):
-        if not head:
+        if not head: 
             return head
-        #[1,2,4,6,7,9]
-        if head.val % 2 == 0:
-            prevStepper = None
-            stepper = head
-            while stepper and stepper.val %2 == 0:
-                prevStepper = stepper
-                stepper = stepper.next
-            if stepper:
-                stepper.next = prevStepper
-                prevStepper.next = stepper.next
-                head = stepper 
-            else: 
-                return head
 
-        currNode = head
-        stepper = currNode
-        prevNode = stepper
-        while currNode:
-            if currNode.val % 2 == 1:
-                prevNode = currNode
-                currNode = currNode.next
-                stepper = currNode
+        evenStart = head 
+        oddStart = head
+        evenEnd = head
+        oddEnd = head
+        if head.val % 2 == 0:
+            while evenEnd and evenEnd.val % 2 == 0:
+                evenEnd = evenEnd.next
+                
+            if evenEnd:
+                
             else:
-                while stepper and stepper.val % 2 == 0:
-                    stepper = stepper.next
-                if not stepper:
-                    return head
-                else:
-                    #[1,2,3,4,5]
-                    temp = stepper.next #4
-                    prevNode.next = stepper
-                    stepper.next = currNode
-                    stepper.next.next = temp
-                    currNode = stepper
-                    self.printLinkedList(head)
-        return head
+                return head
+        
 
 class LinkedListNode:
     def __init__(self,val) -> None:
