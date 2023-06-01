@@ -8,8 +8,8 @@ Beats | 27.79%
 """
 
 """ 
-    The approach here is to loop through whilst the length of num isnt 1, and in each iteratiion, add the rightmost value of num
-    to the current rolling total for that iteration.
+    The approach here is to recursively call the invert tree for each of the elements in the child nodes, and invert the current node's children
+    by swapping reference to each one. 
     
 """
 
