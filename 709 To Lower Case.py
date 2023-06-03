@@ -9,7 +9,7 @@ Beats | 38.69%
 """
 
 """ 
-    The approach here is divide n by 5 until you can't, then by 3 then by 2, resulting in 1 or not 1 if n has another prime factor. 
+    The approach here is to make use of python's lower() function, which iterates through the string and turns every char into lower case. 
 """
 
 class Solution:
