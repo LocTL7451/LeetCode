@@ -2,10 +2,10 @@
 ### https://leetcode.com/problems/largest-3-same-digit-number-in-string/
 
 """
-    Runtime | 23 ms
-    Beats | 97.39%
-    Memory | 13.9 MB
-    Beats | 40.14% 
+Runtime | 45 ms
+Beats | 44.25%
+Memory | 16.2 MB
+Beats | 59.27%
 """
 import math 
 class Solution:
@@ -26,7 +26,7 @@ class Solution:
                         
                         else:
                             if(int(largestRet) < int(currString)):
-                                largestRet = int(currString)
+                                largestRet = currString
                 else:
                     counter = 1
                     last = num[i]
