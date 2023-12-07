@@ -19,6 +19,7 @@ class Solution:
         counter = 0
 
         def dfs(node):
+            # Used to work with variables outside of the inner scope of the function (global)
             nonlocal counter
             if not node: 
                 return 0,0
