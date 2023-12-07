@@ -10,8 +10,7 @@ Beats | 23.38%
 
 class Solution:
     def fullJustify(self, words, maxWidth):
-        if len(words) == 1:
-            return [words[0]]
+
         currLine = []
         finalLines = []
         currLineWidth = 0 
